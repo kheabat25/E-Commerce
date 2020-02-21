@@ -20,7 +20,7 @@ app.engine(
   exphbs({
     extname: 'hbs',
     defaultLayout: 'mainLayout',
-    layoutsDir: __dirname + './views/'
+    layoutsDir: __dirname + '/views/'
   })
 );
 app.set('view engine', 'hbs');

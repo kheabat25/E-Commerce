@@ -17,7 +17,7 @@ var FRUIT = [
 ];
 var JUICE = [
   { name: 'Juice #1', price: 10 },
-  { name: 'Juice #3', price: 12 }
+  { name: 'Juice #2', price: 11 }
 ];
 var SALAD = [
   { name: 'Salad #1', price: 11 },
@@ -42,13 +42,15 @@ function HTMLfruitProduct(con) {
           <p class="card-text">Price: ${FRUIT[con - 1].price}.00</p>
           <div class="d-flex justify-content-between align-items-center>
             <div class="btn-group">
-              <button type="button" onClick="cart2('${FRUIT[con - 1].name}','${
+            <button type="button" onClick="cart2('${FRUIT[con - 1].name}','${
     FRUIT[con - 1].price
   }','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary">
-  <a style="color:inherit;" href="/cart">Buy</a></button>
-  <button id="${btn}" type="button" onClick="cart('${FRUIT[con - 1].name}','${
+              <a href="/cart" style="color:inherit;">Buy</a></button>
+              <button id="${btn}" type="button" onClick="cart('${
+    FRUIT[con - 1].name
+  }','${
     FRUIT[con - 1].price
-  },'${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+  }','${URL}','${con}','${btn}')" class="btn btn-sm btn-outline-secondary">Add to cart</button>
             </div>
             <small class="text-muted">Free shipping</small>
           </div>

@@ -82,6 +82,6 @@ document.getElementById('submitbtn').addEventListener('click', () => {
 });
 function sub() {
   setTimeout(() => {
-    form.onsubmit();
+    form.onSubmit;
   }, 5000);
 }
